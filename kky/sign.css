@@ -1,0 +1,77 @@
+@charset "utf-8";
+.title {
+
+}
+
+.titleImg{
+
+}
+
+.mainArea {
+    height: 100vh; 
+    width: 100vw; 
+    background-color: var(--base);
+}
+
+.logoArea {
+    display: flex;
+    height: 33%;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.inputArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signInput {
+    width: 80%;
+    height: 40px;
+    background-color: var(--input);
+    box-shadow: none;
+    border: none;
+    margin: 5px 0px;
+    padding: 0px 5px;
+    border-radius: 7px;
+}
+
+.signInput::placeholder {
+    color : #7BC9A1;
+}
+
+.signBtn {
+    width: 80%;
+    height: 40px;
+    padding: 0px 5px;
+    border: 1px solid #22935B;
+    border-radius: 10px;
+    background-color: var(--signBtn);
+    color: #C9FFE7;
+    margin-top: 60px;
+}
+
+.btnArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.joinTxt {
+    width: 20%;
+    color: white;
+    margin-top: 20px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+}
+
+.botArea {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+}

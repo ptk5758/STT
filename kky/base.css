@@ -1,0 +1,20 @@
+@charset "utf-8";
+:root {
+    --base : #1E9659;
+    --input : #4BAB7B;
+    --signBtn : #187848;
+}
+html,body {
+    padding: 0px;
+    margin: 0px;
+}
+/**/
+input {
+    box-sizing : border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+table {
+    border-spacing: 0px;
+}
