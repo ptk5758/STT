@@ -1,18 +1,28 @@
 
+/* 상수 선언부 */
 :root{
   --font: 'Poppins', sans-serif;
-  --font-large : 24px;
+  --font-large : 20px;
   --font-medium : 16px;
   --white : #f0f0f0;
 }
 
+/* 초기화 */
+p{
+  padding: 0px;
+  margin: 0px;
+}
+/* 시작 */
+html, body {
+  height: 100%;
+}
 body{
   background-color: #1E965A;
-  margin: 0px auto;
-  height: 915px;
+  margin: 0px auto;  
   font-family: var(--font);
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
+  justify-content: space-around;
 }
 main {
   /* border: 1px solid #000000;   */
@@ -20,10 +30,7 @@ main {
   flex-direction: column;
 }
 
-p{
-  padding: 0px;
-  margin: 0px;
-}
+
 
 header{
   display: flex;
@@ -52,25 +59,43 @@ h1{
   opacity: 60%;
 }
 
-form{  
+.form-group{  
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
   font-family: var(--font);
+}
+
+.form-group .input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.7em;
+  width: 100%;
+}
+
+.form-group .input-group label {
+  width: 80%;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+}
+
+.form-group .input-group label input{
+  background-color: #D8F6CE;
+  opacity: 32%;
+  border-radius: 4px;
+  border-style: hidden;
+  font-family: var(--font);  
+  font-size: 17px;
+  width: 100%;
+  font-size: var(--font-large);  
+  margin: 0.3em 0em;  
+  padding: 0.6em 0.5em;
 }
 
 input::placeholder{
-  color: #1E965A;
-}
-
-input{
-  background-color: #D8F6CE;
-  width: 210px;
-  height: 30px;
-  margin-bottom: 10px;
-  opacity: 40%;
-  border-radius: 3px;
-  border-style: hidden;
-  font-family: var(--font);
+  color: #4f4f4f;
 }
 
 .forgot{
