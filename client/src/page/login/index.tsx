@@ -1,5 +1,4 @@
-import '../publishing/login/style.css';
-
+import './style.css'
 export default function(){
     return(
         <div>
