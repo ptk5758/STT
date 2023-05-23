@@ -10,6 +10,10 @@ h1 {
 /*  */
 
 /* body {background-color: #ffffff;} */
-
+.area {background-color: #000000;}
+.line {border : 1px solid #000000;}
 .calendar {}
-.calendar header { display: flex; flex-direction: row;}
+.calendar header {display: grid; grid-template-columns: 1fr 1fr 1fr; margin: 1rem;}
+.calendar header > .user-icon {  }
+.calendar header > .logo { display: flex; justify-content: center; }
+.calendar header > .icon-group { display: flex; justify-content: flex-end; }
