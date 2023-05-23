@@ -3,7 +3,7 @@ import {ReactComponent as BookIcon} from "../../source/book_icon.svg";
 export default function(){
     // style="color: #F0F0F0;"
     return(
-        <>
+        <div className='login'>
             <header>
                 <a>
                     <i className='book-icon'><BookIcon/></i>
@@ -30,6 +30,6 @@ export default function(){
             <div className="footer">
                 <p>FROM UC.SWT</p>
             </div>
-        </>
+        </div>
     );
 }

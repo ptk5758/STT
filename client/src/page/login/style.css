@@ -14,34 +14,40 @@ p{
   margin: 0px;
 }
 /* 시작 */
-html, body, #root {
+html, body, #root, #root > div {
   height: 100%;
 }
-#root {
-  display: flex;
-  flex-direction: column;
-}
+
 body{
-  background-color: #1E965A;
+  /* background-color: #1E965A; */
   margin: 0px auto;  
   font-family: var(--font);
   display: flex;
   flex-direction: column;  
 }
 
-header{
+#root > div {
+  display: flex;
+  flex-direction: column;  
+}
+.login {
+  background-color: #1E965A;
+}
+
+
+.login header{
   display: flex;
   flex-direction: column;
   margin-bottom: 1em;
   flex: 3;  
   justify-content: flex-end;
 }
-header > a {
+.login header > a {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-header .logo {
+.login header .logo {
   font-weight: lighter;    
   font-family: 'Big Shoulders Inline Text', cursive;
   font-size: 78px;
@@ -51,25 +57,25 @@ header .logo {
   color : #ffffff;
 }
 
-i{
+.login i{
   font-size: 40px;
   margin : 0px;
   align-items: center;
   text-align: center;
   opacity: 60%;
 }
-.book-icon {width: 15%;}
-main {
+.login .book-icon {width: 15%;}
+.login main {
   flex: 3;
 }
-.form-group{  
+.login .form-group{  
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: var(--font);
 }
 
-.form-group .input-group {
+.login .form-group .input-group {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,14 +83,14 @@ main {
   width: 100%;
 }
 
-.form-group .input-group label {
+.login .form-group .input-group label {
   width: 80%;
   /* text-align: center; */
   display: flex;
   justify-content: center;
 }
 
-.form-group .input-group label input{
+.login .form-group .input-group label input{
   background-color: #D8F6CE;
   opacity: 32%;
   border-radius: 4px;
@@ -97,11 +103,11 @@ main {
   padding: 0.6em 0.5em;
 }
 
-input::placeholder{
+.login input::placeholder{
   color: #4f4f4f;
 }
 
-.forgot{
+.login .forgot{
   color: #f0f0f0;
   margin-top: -5px;
   font-size: 12px;
@@ -109,10 +115,10 @@ input::placeholder{
 }
 
 
-.join{
+.login .join{
   margin-top: 1.5em;
 }
-.join p {
+.login .join p {
   font-family: var(--font);
   text-align: center;
   text-decoration-line: underline;
@@ -124,14 +130,14 @@ input::placeholder{
 }
 
 
-.footer{    
+.login .footer{    
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;  
   margin-bottom: 2em;
 }
-.footer > p {
+.login .footer > p {
   font-family: 'Big Shoulders Inline Text', cursive;    
   text-align: center;
   font-size: var(--font-medium);
@@ -139,7 +145,7 @@ input::placeholder{
 }
 
 
-button{
+.login button{
   font-size: 18px;
   font-weight: 100;
   color: #fff;
@@ -156,10 +162,10 @@ button{
   margin-top: 1em;
 }
 
-a:visited{
+.login a:visited{
   color: #f0f0f0;
 }
 
-a{
+.login a{
   text-decoration: none;
 }
