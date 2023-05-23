@@ -1,30 +1,35 @@
 import './style.css'
+import {ReactComponent as BookIcon} from "../../source/book_icon.svg";
 export default function(){
+    // style="color: #F0F0F0;"
     return(
-        <div>
-            <title>SWT - Login</title>
-            <a href='#'>
-                <h1 className='logo'>SWT</h1>
-            </a>
-            <form className='form-group' action='#' method='get'>
-                <div className='input-group'>
-                    <label form='email'><input id='email' name='emailid' type='email' placeholder='E-mail'></input></label>
-                    <label form='password'><input id='password' name='passid' type='text' placeholder='Password'></input></label>
+        <>
+            <header>
+                <a>
+                    <i className='book-icon'><BookIcon/></i>
+                    <h1 className="logo">SWT</h1>                
+                </a>
+            </header>
+            <main>
+                <form className="form-group" action="" method="get">
+                <div className="input-group">
+                    <label><input id="email" name="emailid" type="email" placeholder="E-mail" required/></label>
+                    <label><input id="password" name="passid" type="text" placeholder="Password" required/></label>
                 </div>
-                <p className='forgot'>
-                    <a href='#'>Forgot E-MAIL</a>
-                    <a href='#'>PASSWORD</a>
+                <p className="forgot">
+                    <a href="">Forgot E-MAIL</a> / <a href="">PASSWORD</a>
                 </p>
-                <button type='submit'>Sign Up</button>
-            </form>
-            <div className='join'>
+                <button type="submit">Sign Up</button>
+                </form>
+                <div className="join">
                 <a>
                     <p>Join</p>
                 </a>
-            </div>
-            <div className='footer'>
+                </div>    
+            </main>  
+            <div className="footer">
                 <p>FROM UC.SWT</p>
             </div>
-        </div>
+        </>
     );
 }
