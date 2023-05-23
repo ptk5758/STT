@@ -1,6 +1,6 @@
 import Login from '../page/login'
-import Home from './Home';
-import Calendar from './Calendar';
+import Home from '../page/calendar'
+import Calendar from '../page/calendar';
 import { createBrowserRouter } from "react-router-dom";
 
 interface RouterItem {
